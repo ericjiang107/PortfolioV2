@@ -274,6 +274,7 @@ export const Home = (props: Props) => {
             <div>
                 contact me section
             </div>
+            test
 
         </div>
     )
