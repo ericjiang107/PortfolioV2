@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Home } from './components';
+import { Home, SimpleSlider } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -15,6 +15,9 @@ ReactDOM.render(
           <Home title={"Portfolio V2"} />
         </Route>
 
+        <Route exact path='/slider'>
+          <SimpleSlider />
+        </Route>
       </Switch>
 
     </Router>

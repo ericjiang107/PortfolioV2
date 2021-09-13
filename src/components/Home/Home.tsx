@@ -5,10 +5,7 @@ import { Button } from 'react-bootstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
-import { GrLanguage } from 'react-icons/gr';
 import { GiSkills } from 'react-icons/gi';
-import { AiFillSafetyCertificate } from 'react-icons/ai';
 import { DiPython } from 'react-icons/di';
 import { DiJavascript1 } from 'react-icons/di';
 import { DiReact } from 'react-icons/di';
@@ -26,7 +23,8 @@ import { FcViewDetails } from 'react-icons/fc';
 import { DiGoogleAnalytics } from 'react-icons/di';
 import { GiMuscleUp } from 'react-icons/gi';
 import { GiMissileMech } from 'react-icons/gi';
-
+// Slider import
+import { SimpleSlider } from '../Slider';
 
 interface Props {
     title: string;
@@ -43,7 +41,7 @@ export const Home = (props: Props) => {
 
     return (
         <div>
-            
+
             <div className="backgroundImage">
                 <div className="pads">
                     <div className="me"></div>
@@ -258,6 +256,8 @@ export const Home = (props: Props) => {
                     </div>
                 </div>
             </div>
+
+            <SimpleSlider />
 
             <div className="colors centerize">
                 <div className="top">
