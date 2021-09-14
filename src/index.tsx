@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Home, SCPC } from './components';
+import { Home, SCPC, Pokemon, Weather } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -17,6 +17,14 @@ ReactDOM.render(
 
         <Route path='/SCPC'>
           <SCPC />
+        </Route>
+        
+        <Route path='/Pokemon'>
+          <Pokemon />
+        </Route>
+
+        <Route path='/Weather'>
+          <Weather />
         </Route>
       </Switch>
     </Router>

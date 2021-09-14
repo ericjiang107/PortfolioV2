@@ -26,7 +26,8 @@ import { GiMissileMech } from 'react-icons/gi';
 // Slider import
 import { SimpleSlider } from '../Slider';
 import { Link, animateScroll as scroll } from "react-scroll";
-import { white } from 'material-ui/styles/colors';
+import { useHistory } from 'react-router-dom';
+
 
 
 interface Props {
@@ -47,7 +48,13 @@ const useStyles = makeStyles((theme) => ({
 
 export const Home = (props: Props) => {
 
-    const classes = useStyles()
+    const classes = useStyles();
+
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push("/SCPC");
+    }
 
     return (
         <div className="scroll-container" id="home">
@@ -213,9 +220,9 @@ export const Home = (props: Props) => {
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>
                             <img className="img__img" src={ require("../assets/images/Capstone.JPG").default } />
-                            <p className="img__description test">
+                            <p className="img__description test" onClick={handleClick}>
                                 TCG CARD GAME PRICE BOOKMARKER
-                                <p className="font"> Single Card Price Checker </p>
+                                <p className="font" onClick={handleClick} > Single Card Price Checker </p>
                             </p>
                         </div>
                     </div>
