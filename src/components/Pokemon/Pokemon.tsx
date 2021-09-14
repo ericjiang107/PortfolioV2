@@ -6,6 +6,9 @@ import { Sliderpokemon } from '../Sliderpokemon';
 
 
 export const Pokemon = () => {
+
+    
+
     return (
         <div className="colors2">
             <div className="row justify-content-center" id="top">

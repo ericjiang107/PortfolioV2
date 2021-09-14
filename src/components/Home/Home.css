@@ -54,7 +54,7 @@ body {
 }
 
 .sizeUp {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .sizeDown {
@@ -223,6 +223,26 @@ nav, .scroll-container {
 
 * {
     scroll-behavior: smooth;
+}
+
+.whoI {
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+    width: 200px;
+}
+
+.whoI:hover {
+    color: gold;
+    background-color: black;
+}
+
+.finalScroll {
+    padding-top: 85px;
+}
+
+#width {
+    width: 100%;
 }
 
 .number {

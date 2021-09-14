@@ -37,7 +37,7 @@ interface Props {
 const useStyles = makeStyles((theme) => ({
 
     sticky: {
-        position: 'fixed',
+        position: 'absolute',
         top: 0,
         zIndex: 100,
         fontSize: '25px',
@@ -75,18 +75,15 @@ export const Home = (props: Props) => {
         history5.push("/Cat");
     }
 
-
     return (
         <div className="scroll-container" id="home">
-            <div>
-                <nav className={classes.sticky}>
+                <nav className={classes.sticky} id="width">
                     Eric Jiang 
                     <a href="#home">home</a>
                     <a href="#Who am I?">who am I</a>
                     <a href="#projects">projects</a>
                     <a href="#links">links</a>
                 </nav>
-            </div>
             <div className="backgroundImage">
                 <div className="pads">
                     <div className="me"></div>
@@ -99,6 +96,9 @@ export const Home = (props: Props) => {
                         I'm a full stack engineer with a mechanical engineering background and a passion for food, gaming, design, and programming. 
                     </div>
                 </Container>
+                <div className="finalScroll" onClick={() => window.location.replace("/#Who am I?")}>
+                    <Button className="whoI">LEARN MORE</Button>
+                </div>
             </div>
             <div className="colors centerize" id="Who am I?">
                 <div className="centerize font sizeUp sizeDown">
