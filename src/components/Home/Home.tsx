@@ -51,10 +51,30 @@ export const Home = (props: Props) => {
     const classes = useStyles();
 
     const history = useHistory();
-
     const handleClick = () => {
         history.push("/SCPC");
     }
+
+    const history2 = useHistory();
+    const handleClick2 = () => {
+        history2.push("/Pokemon");
+    }
+
+    const history3 = useHistory();
+    const handleClick3 = () => {
+        history3.push("/Weather");
+    }
+
+    const history4 = useHistory();
+    const handleClick4 = () => {
+        history4.push("/Gundam");
+    }
+
+    const history5 = useHistory();
+    const handleClick5 = () => {
+        history5.push("/Cat");
+    }
+
 
     return (
         <div className="scroll-container" id="home">
@@ -240,9 +260,9 @@ export const Home = (props: Props) => {
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>
                             <img className="img__img" src={ require("../assets/images/pokemonJS.JPG").default } />
-                            <p className="img__description test">
+                            <p className="img__description test" onClick={handleClick2}>
                                 JAVASCRIPT, POKEMON API
-                                <p className="font"> Pokemon Searcher </p>
+                                <p className="font" onClick={handleClick2}> Pokemon Searcher </p>
                             </p>
                         </div>
                     </div>
@@ -252,9 +272,9 @@ export const Home = (props: Props) => {
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>
                             <img className="img__img" src={ require("../assets/images/weatherapi.JPG").default } />
-                            <p className="img__description test">
+                            <p className="img__description test" onClick={handleClick3}>
                                 JAVASCRIPT, OPENWEATHER API
-                                <p className="font"> Weather Forecast </p>
+                                <p className="font" onClick={handleClick3}> Weather Forecast </p>
                             </p>
                         </div>
                     </div>
@@ -262,9 +282,9 @@ export const Home = (props: Props) => {
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>
                             <img className="img__img" src={ require("../assets/images/gundam3.JPG").default } />
-                            <p className="img__description test">
-                                REACT, REDUX, FLASK, POSTGRE SQL
-                                <p className="font"> Gundam Gallery </p>
+                            <p className="img__description test" onClick={handleClick4}>
+                                REACT, REDUX, FLASK, POSTGRE SQL, FIREBASE
+                                <p className="font" onClick={handleClick4}> Gundam Gallery </p>
                             </p>
                         </div>
                     </div>
@@ -272,9 +292,9 @@ export const Home = (props: Props) => {
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>
                             <img className="img__img" src={ require("../assets/images/catproject2.JPG").default } />
-                            <p className="img__description test">
+                            <p className="img__description test" onClick={handleClick5}>
                                 UNITY, C#
-                                <p className="font"> Cat Game </p>
+                                <p className="font" onClick={handleClick5}> Cat Game </p>
                             </p>
                         </div>
                     </div>

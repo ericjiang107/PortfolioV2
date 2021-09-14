@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Home, SCPC, Pokemon, Weather } from './components';
+import { Home, SCPC, Pokemon, Weather, Gundam, Cat } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -25,6 +25,14 @@ ReactDOM.render(
 
         <Route path='/Weather'>
           <Weather />
+        </Route>
+
+        <Route path='/Gundam'>
+          <Gundam />
+        </Route>
+
+        <Route path='/Cat'>
+          <Cat />
         </Route>
       </Switch>
     </Router>
