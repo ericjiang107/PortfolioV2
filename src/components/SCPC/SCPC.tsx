@@ -2,6 +2,7 @@ import React from 'react';
 import './SCPC.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Slidercap } from '../Slidercap';
 
 
 export const SCPC = () => {
@@ -15,7 +16,7 @@ export const SCPC = () => {
                     Single Card Price Checker 
                 </div>
                 <div className="col-md-5">
-                    <img className="img" src={ require("../assets/images/Capstone.JPG").default } />
+                    <Slidercap />
                 </div>
                 <div className="col-md-5">
                     <p className="text3">

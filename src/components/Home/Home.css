@@ -167,7 +167,6 @@ html,body
 
 .font3 {
     font-size: 35px;
-    padding-bottom: 40px;
 }
 
 .font3:hover {
@@ -226,3 +225,13 @@ nav, .scroll-container {
     scroll-behavior: smooth;
 }
 
+.number {
+    padding-bottom: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.number:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

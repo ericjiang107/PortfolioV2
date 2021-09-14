@@ -2,6 +2,7 @@ import React from 'react';
 import './Pokemon.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Sliderpokemon } from '../Sliderpokemon';
 
 
 export const Pokemon = () => {
@@ -15,7 +16,7 @@ export const Pokemon = () => {
                      Pokemon Searcher
                 </div>
                 <div className="col-md-5">
-                    <img className="img" src={ require("../assets/images/pokemonJS.JPG").default } />
+                    <Sliderpokemon />
                 </div>
                 <div className="col-md-5">
                     <p className="text3">

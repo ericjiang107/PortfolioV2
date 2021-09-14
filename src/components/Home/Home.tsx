@@ -313,13 +313,10 @@ export const Home = (props: Props) => {
                         ericjiang107@gmail.com
                     </div>
                 </div>
+                <div className="number">
+                    Phone: +1 (718) 877-6881
+                </div>
             </div>
-
-            <div>
-                contact me section
-            </div>
-            test
-
         </div>
     )
 }
