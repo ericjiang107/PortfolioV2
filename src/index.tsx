@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Home, SimpleSlider } from './components';
+import { Home, SCPC } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -15,11 +15,10 @@ ReactDOM.render(
           <Home title={"Portfolio V2"} />
         </Route>
 
-        <Route exact path='/slider'>
-          <SimpleSlider />
+        <Route path='/SCPC'>
+          <SCPC />
         </Route>
       </Switch>
-
     </Router>
     
   </React.StrictMode>,

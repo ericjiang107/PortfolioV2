@@ -192,3 +192,37 @@ html,body
 .bot {
     padding-bottom: 20px;
 }
+
+/* Scroll */
+a {
+    /* display: inline-block; */
+    width: 200px;
+    text-decoration: none;
+    float: right;
+    font-size: 25px;
+    color: gold;
+}
+nav, .scroll-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+/* nav {
+    width: 339px;
+    padding: 5px;
+    border: 1px solid black;
+} */
+
+.scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 5em;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+

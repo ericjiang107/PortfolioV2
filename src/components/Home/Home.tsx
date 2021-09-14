@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Home.css';
 import Container from '@material-ui/core/Container';
 import { Button } from 'react-bootstrap';
@@ -25,6 +25,9 @@ import { GiMuscleUp } from 'react-icons/gi';
 import { GiMissileMech } from 'react-icons/gi';
 // Slider import
 import { SimpleSlider } from '../Slider';
+import { Link, animateScroll as scroll } from "react-scroll";
+import { white } from 'material-ui/styles/colors';
+
 
 interface Props {
     title: string;
@@ -32,16 +35,31 @@ interface Props {
 
 const useStyles = makeStyles((theme) => ({
 
+    sticky: {
+        position: 'fixed',
+        top: 0,
+        zIndex: 100,
+        fontSize: '25px',
+        color: 'red',
+        backgroundColor: 'white',
+    },
 }))
-
 
 export const Home = (props: Props) => {
 
     const classes = useStyles()
 
     return (
-        <div>
-
+        <div className="scroll-container" id="home">
+            <div>
+                <nav className={classes.sticky}>
+                    Eric Jiang 
+                    <a href="#home">home</a>
+                    <a href="#Who am I?">who am I</a>
+                    <a href="#projects">projects</a>
+                    <a href="#links">links</a>
+                </nav>
+            </div>
             <div className="backgroundImage">
                 <div className="pads">
                     <div className="me"></div>
@@ -55,8 +73,7 @@ export const Home = (props: Props) => {
                     </div>
                 </Container>
             </div>
-            
-            <div className="colors centerize">
+            <div className="colors centerize" id="Who am I?">
                 <div className="centerize font sizeUp sizeDown">
                     Who am I? 
                 </div>
@@ -77,7 +94,7 @@ export const Home = (props: Props) => {
                         <p className="padding">
                             I believe in companies that encourage their employees by having a good work culture. That is because, a good work culture means the company
                             trusts their employees which leads to everyone understanding, supporting, and inspiring each other which would allow for a more creative and 
-                            diverse mindset. 
+                            diverse environment. 
                         </p>
                         <p className="padding">
                             I’m driven by engaging with others and providing a safe space as a sounding board to develop meaningful work. My mantra 
@@ -191,8 +208,8 @@ export const Home = (props: Props) => {
                 </div>
             </Container>
 
-            <div>
-                <div className="row">
+            <div id="projects">
+                <div className="row g-0">
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>
                             <img className="img__img" src={ require("../assets/images/Capstone.JPG").default } />
@@ -224,7 +241,7 @@ export const Home = (props: Props) => {
                     </div>
                 </div>
 
-                <div className="row">
+                <div className="row g-0">
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>
                             <img className="img__img" src={ require("../assets/images/weatherapi.JPG").default } />
@@ -259,7 +276,7 @@ export const Home = (props: Props) => {
 
             <SimpleSlider />
 
-            <div className="colors centerize">
+            <div className="colors centerize" id="links">
                 <div className="top">
                     <Button className="icontest"> <AiFillGithub size={50} onClick={() => window.open('https://github.com/ericjiang107', "_blank")} /> </Button>
                     <Button className="icontest"> <AiFillLinkedin size={50} onClick={() => window.open('https://www.linkedin.com/in/eric-jiang-855a16107/', "_blank")} /> </Button>
