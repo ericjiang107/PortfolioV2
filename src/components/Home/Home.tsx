@@ -36,14 +36,6 @@ interface Props {
 
 const useStyles = makeStyles((theme) => ({
 
-    sticky: {
-        position: 'absolute',
-        top: 0,
-        zIndex: 100,
-        fontSize: '25px',
-        color: 'red',
-        backgroundColor: 'white',
-    },
 }))
 
 export const Home = (props: Props) => {
@@ -77,13 +69,24 @@ export const Home = (props: Props) => {
 
     return (
         <div className="scroll-container" id="home">
-                <nav className={classes.sticky} id="width">
-                    Eric Jiang 
-                    <a href="#home">home</a>
-                    <a href="#Who am I?">who am I</a>
-                    <a href="#projects">projects</a>
-                    <a href="#links">links</a>
+
+                <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a className="nav-link active" href="#home">Home</a>
+                        </li> 
+                        <li className="nav-item">
+                            <a className="nav-link active" href="#Who am I?">About</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link active" href="#projects">Projects</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link active" href="#links">Links</a>
+                        </li>
+                    </ul>
                 </nav>
+
             <div className="backgroundImage">
                 <div className="pads">
                     <div className="me"></div>
@@ -113,19 +116,16 @@ export const Home = (props: Props) => {
                         </p>
                         <p className="padding">
                             In my spare time, I enjoy creating impactful applications not just for myself but for society. For instance, my first full-stack 
-                            application was geared toward those who are card sellers and card buyers in the TCG card industry. This is because whenever I want to
-                            look up the prices of a card, there are many steps that I have to take to search for it. Instead, I thought to myself, "why can't I just
-                            bookmark this so I can always keep an eye for when the price changes?" I'm also currently working on a 2d rpg game with my friends as a
-                            personal side project. 
+                            application was geared toward those who are card sellers and card buyers in the TCG card industry. I built this application to 
+                            simplify the research for the value of a card. My intent is to provide a space where consumers can understand the change in cost 
+                            and price range for each collected item. I'm currently programming a 2D RPG game in Unity using C#.
                         </p>
                         <p className="padding">
-                            I believe in companies that encourage their employees by having a good work culture. That is because, a good work culture means the company
-                            trusts their employees which leads to everyone understanding, supporting, and inspiring each other which would allow for a more creative and 
-                            diverse environment. 
+                            What I want to do next: I look forward to working with others who encourage career growth, internal mobility, and provide a great
+                            work culture. I am driven by strong leadership that trusts, supports, and inspires a creative and diverse environment.
                         </p>
-                        <p className="padding">
-                            I’m driven by engaging with others and providing a safe space as a sounding board to develop meaningful work. My mantra 
-                            is that a company is only as good as the teams behind it. 
+                        <p className="padding italic">
+                            A a company is only as good as the teams behind it. 
                         </p>
                         <div className="centerButton">
                             <Button className="styleButton" onClick={() => window.open("https://ericjiang107.github.io/ResumeTest/", "_blank")}>
@@ -235,7 +235,7 @@ export const Home = (props: Props) => {
                 </div>
             </Container>
 
-            <div id="projects">
+            <div className="ups" id="projects">
                 <div className="row g-0">
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>

@@ -50,8 +50,15 @@ input:hover {
 }
 
 .links {
-    float: left;
-    padding-left: 50px;
+    display: inline-block;
     font-size: 35px;
+    width: 200px;
+    text-align: center;
     color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.links:hover {
+    color: gold;
 }

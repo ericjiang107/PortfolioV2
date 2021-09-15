@@ -192,26 +192,27 @@ html,body
     padding-bottom: 20px;
 }
 
+.ups {
+    padding-top: 45px;
+}
+
+.italic {
+    font-style: italic;
+}
+
 /* Scroll */
 a {
-    /* display: inline-block; */
-    width: 200px;
-    text-decoration: none;
-    float: right;
-    font-size: 25px;
-    color: gold;
+    font-size: 20px;
+    overflow: hidden;
+    width: 100px;
 }
+
 nav, .scroll-container {
     display: block;
     margin: 0 auto;
     text-align: center;
     scroll-behavior: smooth;
 }
-/* nav {
-    width: 339px;
-    padding: 5px;
-    border: 1px solid black;
-} */
 
 .scroll-page {
     display: flex;
@@ -223,6 +224,16 @@ nav, .scroll-container {
 
 * {
     scroll-behavior: smooth;
+}
+
+.navbar {
+    padding: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.navbar-nav li a:hover {
+    color: gold;
 }
 
 .whoI {
