@@ -28,8 +28,6 @@ import { SimpleSlider } from '../Slider';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useHistory } from 'react-router-dom';
 
-
-
 interface Props {
     title: string;
 }
@@ -254,7 +252,7 @@ export const Home = (props: Props) => {
 
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>
-                            <img className="img__img" src={ require("../assets/images/portfolio.JPG").default } />
+                            <img className="img__img" src={ require("../assets/images/portfoliov2.JPG").default } />
                             <p className="img__description test" onClick={handleClick6}>
                                 REACT
                                 <p className="font" onClick={handleClick6}> Portfolio </p>
