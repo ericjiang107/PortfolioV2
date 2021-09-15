@@ -28,7 +28,7 @@ export const Portfolio = () => {
                     Technologies: React, HTML, CSS, Bootstrap, Typescript
                 </div>
                 <div className="github">
-                    <form target="_blank" action="https://github.com/ericjiang107/Weather-App-Project">
+                    <form target="_blank" action="https://github.com/ericjiang107/PortfolioV2">
                         <input type="submit" value="Github Link" />
                     </form>
                 </div>
