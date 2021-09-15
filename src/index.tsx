@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Home, SCPC, Pokemon, Weather, Gundam, Cat } from './components';
+import { Home, SCPC, Pokemon, Weather, Gundam, Cat, Portfolio } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -33,6 +33,10 @@ ReactDOM.render(
 
         <Route path='/Cat'>
           <Cat />
+        </Route>
+
+        <Route path='/Portfolio'>
+          <Portfolio />
         </Route>
 
       </Switch>

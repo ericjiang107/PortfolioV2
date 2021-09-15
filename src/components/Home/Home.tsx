@@ -67,6 +67,11 @@ export const Home = (props: Props) => {
         history5.push("/Cat");
     }
 
+    const history6 = useHistory();
+    const handleClick6 = () => {
+        history6.push("/Portfolio");
+    }
+
     return (
         <div className="scroll-container" id="home">
 
@@ -250,9 +255,9 @@ export const Home = (props: Props) => {
                     <div className="col-md">
                         <div className="img__wrap images" onClick={() => {console.log("clicked")}}>
                             <img className="img__img" src={ require("../assets/images/portfolio.JPG").default } />
-                            <p className="img__description test">
+                            <p className="img__description test" onClick={handleClick6}>
                                 REACT
-                                <p className="font"> Portfolio </p>
+                                <p className="font" onClick={handleClick6}> Portfolio </p>
                             </p>
                         </div>
                     </div>
