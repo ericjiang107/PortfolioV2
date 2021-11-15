@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect, useRef } from 'react';
 import './Home.css';
 import Container from '@material-ui/core/Container';
@@ -5,28 +6,13 @@ import { Button } from 'react-bootstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
-import { GiSkills } from 'react-icons/gi';
-import { DiPython } from 'react-icons/di';
-import { DiJavascript1 } from 'react-icons/di';
-import { DiReact } from 'react-icons/di';
-import { SiFlask } from 'react-icons/si';
-import { SiPostgresql } from 'react-icons/si';
-import { SiTypescript } from 'react-icons/si';
-import { FaLanguage } from 'react-icons/fa';
-import { SiMathworks } from 'react-icons/si';
-import { AiFillHtml5 } from 'react-icons/ai';
-import { FaCss3Alt } from 'react-icons/fa';
-import { DiBootstrap } from 'react-icons/di';
-import { SiJson } from 'react-icons/si';
-import { FcCollaboration } from 'react-icons/fc';
-import { FcViewDetails } from 'react-icons/fc';
-import { DiGoogleAnalytics } from 'react-icons/di';
-import { GiMuscleUp } from 'react-icons/gi';
-import { GiMissileMech } from 'react-icons/gi';
 // Slider import
 import { SimpleSlider } from '../Slider';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useHistory } from 'react-router-dom';
+import ProgressBar from "@ramonak/react-progress-bar";
+import { Sliderprog } from '../Sliderprog';
+
 
 interface Props {
     title: string;
@@ -139,104 +125,7 @@ export const Home = (props: Props) => {
                 </div>
             </div>
 
-            <Container maxWidth="lg" id="padding">
-                <div className="row centerize">
-                    <div className="col-md width2">
-                        <div className="font bot"> 
-                            Language Skills
-                        </div>
-                        <div className="morefont morepadding">
-                            <DiPython size={45}/> 
-                            <DiJavascript1 size={45} />
-                            <br></br>
-                            Python and JavaScript
-                        </div>
-                        <div className="morefont morepadding">
-                            <SiFlask size={45} />
-                            <DiReact size={45} />
-                            <br></br>
-                            Flask and React
-                        </div>
-                        <div className="morefont morepadding">
-                            <SiPostgresql size={45} />
-                            <br></br>
-                            Postgre SQL
-                        </div>
-                        <div className="morefont morepadding">
-                            <SiTypescript size={40} />
-                            <br></br>
-                            Typescript
-                        </div>
-                        <div className="morefont morepadding">
-                            <FaLanguage size={49} />
-                            <br></br>
-                            Chinese
-                        </div>
-                    </div>
-                    <div className="col-md width2">
-                        <div className="font bot"> 
-                            Other Skills
-                        </div>
-                        <div className="morefont morepadding">
-                            <SiMathworks size={45}/> 
-                            <br></br>
-                            Matlab
-                        </div>
-                        <div className="morefont morepadding">
-                            <AiFillHtml5 size={45} />
-                            <FaCss3Alt size={45} />
-                            <DiBootstrap size={45} />
-                            <br></br>
-                            HTML, CSS, Bootstrap
-                        </div>
-                        <div className="morefont morepadding">
-                            <AiFillGithub size={45} />
-                            <br></br>
-                            Github
-                        </div>
-                        <div className="morefont morepadding">
-                            <SiJson size={35} />
-                            <br></br>
-                            JSON
-                        </div>
-                        <div className="morefont morepadding">
-                            <GiMissileMech size={50} />
-                            <br></br>
-                            SolidWorks and ANSYS
-                        </div>
-                    </div>
-                    <div className="col-md width2">
-                        <div className="font bot"> 
-                            Behavior Skills
-                        </div>
-                        <div className="morefont morepadding">
-                            <FcCollaboration size={45}/> 
-                            <br></br>
-                            Collaboration
-                        </div>
-                        <div className="morefont morepadding">
-                            <FcViewDetails size={45} />
-                            <br></br>
-                            Detail Oriented
-                        </div>
-                        <div className="morefont morepadding">
-                            <DiGoogleAnalytics size={45} />
-                            <br></br>
-                            Analytical
-                        </div>
-                        <div className="morefont morepadding">
-                            <GiMuscleUp size={45} />
-                            <br></br>
-                            Work Ethic
-                        </div>
-                        <div className="morefont morepadding">
-                            <GiSkills size={45} />
-                            <br></br>
-                            Problem Solver
-                        </div>
-                    </div>
-                </div>
-            </Container>
+            <Sliderprog />
 
             <div className="ups" id="projects">
                 <div className="row g-0">

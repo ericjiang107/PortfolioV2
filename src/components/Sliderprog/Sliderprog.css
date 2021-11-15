@@ -1,0 +1,45 @@
+.slides {
+    position: relative;
+}
+  
+.slides .slick-prev,
+.slides .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index:1;
+}
+  
+.slides .slick-prev {
+    left: 5%;
+}
+  
+.slides .slick-next {
+    right: 5%;
+}
+
+.slick-prev:before {
+    content: "<";
+    color: black;
+    font-size: 70px;
+}
+
+.slick-next:before {
+    content: ">";
+    color: black;
+    font-size: 70px;
+} 
+
+.imagepoke {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.tester2 {
+    padding-top: 80px;
+}
+
+.tester3 {
+    padding-top: 50px;
+}

@@ -266,3 +266,37 @@ nav, .scroll-container {
     text-decoration: underline;
     cursor: pointer;
 }
+
+.new {
+    float: left;
+    padding-top: 6px;
+}
+
+.newWidth {
+    width: 80%;
+    float: right;
+}
+
+.newFont {
+    font-size: 20px;
+}
+
+#spacingX {
+    padding-top: 5px;
+}
+
+.trialx {
+    padding-top: 40px;
+}
+
+.trail2 {
+    padding-top: 25px;
+}
+
+.trial3 {
+    padding-top: 13px;
+}
+
+.trial4 {
+    padding-top: 80px;
+}
